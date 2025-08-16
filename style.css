@@ -1,0 +1,112 @@
+/* =====================
+   ESTILO PADRÃO JOANA LANCHES
+===================== */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('img/fundo-hamburguer.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(255,255,255,0.6);
+    z-index: -1;
+}
+header {
+    background-color: #B71C1C;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+header h1 {
+    font-size: 18px;
+    margin: 0;
+}
+header p {
+    font-size: 12px;
+    margin: 0;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #D32F2F;
+    padding: 5px 0;
+}
+nav a {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+.container {
+    padding: 10px;
+}
+.card {
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.stat {
+    flex: 1;
+    background: #FFEBEE;
+    color: #B71C1C;
+    padding: 10px;
+    margin: 0 5px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+.buttons .btn {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+.buttons .btn.red { background: #FFCDD2; }
+.buttons .btn.gray { background: #F5F5F5; }
+.btn img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+form input, form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+form button {
+    width: 100%;
+    background: #B71C1C;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
